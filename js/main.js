@@ -29,7 +29,8 @@ if(user.lang == "EN"){
         user.eduName = prompt("What's its name?", "WUIT");
         user.salary = prompt("How much do you earn?", "300$")
     } else if(user.want2 = "No") {
-        alert("Press OK to end conversation.")
+        
+        throw alert("Press OK to end conversation.");
     }
     alert(`${user.name} you are ${user.age} years old \nProbably you know English \nAnd you earn ${user.salary} now O_O`)
 } else if (user.lang == "UZ"){
@@ -48,7 +49,7 @@ if(user.lang == "EN"){
         user.eduName = prompt("Uning nomi nima?", "WUIT");
         user.salary = prompt("Qancha pul topasiz?", "300$")
     } else if(user.want2 = "Yoq") {
-        alert("Suhbatni tugatish uchun OK tugmasini bosing.")
+        throw alert("Suhbatni tugatish uchun OK tugmasini bosing.")
     }
     alert(`${user.name} siz ${user.age}  yoshdasiz \nEhtimol siz o'zbek tilini bilasiz \nVa siz hozir ${user.salary} ishlab topyapsiz O_O`)
 } else if (user.lang == "RU"){
@@ -67,7 +68,7 @@ if(user.lang == "EN"){
         user.eduName = prompt("Что это за имя?", "WUIT");
         user.salary = prompt("Сколько ты зарабатываешь?", "300$")
     } else if(user.want2 = "Нет") {
-        alert("Нажмите OK, чтобы завершить разговор.")
+        throw alert("Нажмите OK, чтобы завершить разговор.");
     }
     alert(`${user.name} вам ${user.age} лет \nВероятно, вы знаете русский \nAnd you earn ${user.salary} now O_O`)
 } else {
